@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test Suite 1">
+    <test name="AllTests">
+<!--        <packages>-->
+<!--            <package name="com.example.*">-->
+<!--                <exclude name="com.example.AppTest"/>-->
+<!--            </package>-->
+<!--        </packages>-->
+        <groups>
+            <run>
+                <include name="strings"/>
+                <include name="arithmetic"/>
+                <exclude name="test"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.StringsTest" />
+            <class name="com.example.ArithmeticTest" />
+            <class name="com.example.AppTest" />
+        </classes>
+    </test>
+</suite>

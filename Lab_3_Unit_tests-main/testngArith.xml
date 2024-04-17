@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test Suite 2">
+    <test name="ArithmeticTest">
+        <groups>
+            <run>
+                <include name="arithmetic"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.example.ArithmeticTest" />
+        </classes>
+    </test>
+</suite>
